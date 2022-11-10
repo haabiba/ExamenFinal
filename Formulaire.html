@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta  charset="utf-8">
+         <script src="validateForm.js"></script>
+      
+         
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet"
+         <link rel="stylesheet" type="text/css" href="stylef.css" />
+         <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="style.css" />
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+            <title> Github Issues</title>
+          </head>
+          <body>
+         <!-- create header -->
+            <header>
+                <div class="logo " >
+                    <a  href="https://github.com/" target="_blank">
+                        <i  class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="purchase-process">
+                    <div class="search">
+                        <input type="search" placeholder="  Searcg or jump to ..." onclick="changeText()"> 
+                        <div class="slope" id='p1'>/</div>
+                    
+                    </div>
+                </div>
+                <div class="menu mr-md-3">
+                    <ul>
+                        <li><a href="pullrequests.html">Pull requests</a></li>
+                        <li><a href="issues.html">Issues</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                    
+                     </ul>
+                </div>
+                <div class="notification">
+                    <a href="notification.html">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell">
+                            <path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path>
+                        </svg>
+                    </a>
+                    
+        
+                    <a id="plus-drop-down" href="#"><i class="fa-regular fa-plus"></i></a> 
+                    <div class="dropdown">
+                    <a><span class="dropdown-caret dropbtn"  onclick="myFunction()" > </span></a>
+                    <div id="myDropdown" class="dropdown-content dropdown-menu-sw">
+                        <a href="#repository"> New repository </a>
+                            <a href="#iRepository">Import repository </a>
+                                <a href="#gist"> New gist</a>
+                                    <a href="#organization"> New organization</a>
+                    
+                    </div>
+                    </div>
+                   
+                   
+        
+        
+        
+        
+        
+        
+        
+                    <a class="inner1" href="myPortfolio.html" target="_blank" >
+                       <img src="https://avatars.githubusercontent.com/u/45731917?s=40&amp;v=4" alt="@haabiba"
+                                 size="20" height="20" width="20" data-view-component="true" class="avatar avatar-small circle">
+                                <span class="unread-indicator js-feature-preview-indicator mr-md-3" style="top: 1px;"></span>
+                    </a>
+                    <a><span class="dropdown-caret"></span></a>
+                </div>
+             
+            </header>
+    <script src="validateForm.js"></script>
+      <h1>Formulaire de contact</h1>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+                <td>
+                   <label>
+                    Password <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                   <input type="password" name="password" class="long" >
+                   <span class="error" id="errormsg"></span>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                   <label>
+                    Select <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="LANGAGE"value="JS"/> js<br>
+                    <input type="checkbox" name="LANGAGE" value="P"/>PHP<br>
+                    <input type="checkbox" name="LANGAGE" value="J"/>JAVA<br>
+                   <span class="error" id="errormsg"></span>
+                </td>
+             </tr>
+
+
+
+             <tr>
+                <td>
+                   <label for="pays">
+                    Dans quel pays habitez-vous ? <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                    
+       <select name="pays" id="pays" class="long">
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+        <option value="canada">Canada</option>
+        <option value="etats-unis">États-Unis</option>
+        <option value="chine">Chine</option>
+        <option value="japon">Japon</option>
+    </select>
+ <span class="error" id="errormsg"></span>
+                </td>
+             </tr>
+
+
+
+             
+             <tr>
+                <td>
+                   <label>
+                    Gender <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male"/> Male<br>
+                    <input type="radio" name="gender" value="female"/>Female <br>
+
+                   <span class="error" id="errormsg"></span>
+                </td>
+             </tr>
+
+             <tr>
+                <td>
+                   <label for="namefichier">
+                    Select Photo<span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                    <input type="file" name="monfichier" class="long"/>
+                   <span class="error" id="errorname"></span>
+                </td>
+             </tr>
+
+
+             <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <form>
+                       
+                        <p class="fallbackLabel">Veuillez saisir votre date de naissance :</p>
+                        <div class="fallbackDatePicker">
+                          <span>
+                            <label for="day">Jour :</label>
+                            <select id="day" name="day">
+                            </select>
+                          </span>
+                          <span>
+                            <label for="month">Mois :</label>
+                            <select id="month" name="month">
+                              <option selected>Janvier</option>
+                              <option>Février</option>
+                              <option>Mars</option>
+                              <option>Avril</option>
+                              <option>Mai</option>
+                              <option>Juin</option>
+                              <option>Juillet</option>
+                              <option>Août</option>
+                              <option>Septembre</option>
+                              <option>Octobre</option>
+                              <option>Novembre</option>
+                              <option>Décembre</option>
+                            </select>
+                          </span>
+                          <span>
+                            <label for="year">Année :</label>
+                            <select id="year" name="year">
+                            </select>
+                          </span>
+                        </div>
+                      </form>
+                </td>
+             </tr>
+
+
+
+
+
+
+
+            <tr>
+               <td>
+            
+               </td>
+               <td>
+                <p><button>Envoyer</button></p>
+                <input type="submit" value="Envoyer">      
+                <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>

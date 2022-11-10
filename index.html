@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> Github Issues</title>
+  </head>
+  <body>
+ <!-- create header -->
+    <header>
+        <div class="logo " >
+            <a  href="https://github.com/" target="_blank">
+                <i  class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="purchase-process">
+            <div class="search">
+                <input type="search" placeholder="  Searcg or jump to ..." onclick="changeText()"> 
+                <div class="slope" id='p1'>/</div>
+            
+            </div>
+        </div>
+        <div class="menu mr-md-3">
+            <ul>
+                <li><a href="pullrequests.html">Pull requests</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            
+             </ul>
+        </div>
+        <div class="notification">
+            <a href="notification.html">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell">
+                    <path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path>
+                </svg>
+            </a>
+            
+
+            <a id="plus-drop-down" href="#"><i class="fa-regular fa-plus"></i></a> 
+            <div class="dropdown">
+            <a><span class="dropdown-caret dropbtn"  onclick="myFunction()" > </span></a>
+            <div id="myDropdown" class="dropdown-content dropdown-menu-sw">
+                <a href="#repository"> New repository </a>
+                    <a href="#iRepository">Import repository </a>
+                        <a href="#gist"> New gist</a>
+                            <a href="#organization"> New organization</a>
+            
+            </div>
+            </div>
+           
+           
+
+
+
+
+
+
+
+            <a class="inner1" href="myPortfolio.html" target="_blank" >
+               <img src="https://avatars.githubusercontent.com/u/45731917?s=40&amp;v=4" alt="@haabiba"
+                         size="20" height="20" width="20" data-view-component="true" class="avatar avatar-small circle">
+                        <span class="unread-indicator js-feature-preview-indicator mr-md-3" style="top: 1px;"></span>
+            </a>
+            <a><span class="dropdown-caret"></span></a>
+        </div>
+     
+    </header>
+    <header-list>
+        <div class="actions-rep-lien">
+<div class="actions-lien">
+            <div class="lien-header">
+               
+                
+              <span class="author mr-2">
+                <img src="repo-book.svg" alt="book"/>
+              </span>
+              <div class="nj"><a>nodejs</a>  </div> 
+              <span class="stretch">/</span>
+              <strong class="self-stretch">
+                <div class="nj"><a>  node</a> </div>
+              </strong>
+                
+              <span ></span><span class="label">Public</span>
+            </div>
+            
+     <div class="pagehead-actions ">
+     <ul>
+        <li class="btn btn-sm mr-2 ti-pin-alt"><a href="pullrequests.html"><img src="pin.svg" alt="pin"/>Pin</a></li>
+        <li class="btn btn-sm mr-2 ti-eye-alt"><a href="issues.html"><img src="eye.svg" alt="eye"/> Unwath  <span ></span><span class="label-n">20</span><i class="fa-sharp fa-solid fa-caret-down"></i></a> </li>
+        <li class="btn btn-sm mr-2 ti-forked-alt"><a href="marketplace.html"><img src="repo-forked-16.svg" alt="pin"/>Fork <span ></span><span class="label-n">20</span> <span class="green-box"> </span><span class="mr-2"></span><i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+        <li class="btn btn-sm mr-2"><a href="explore.html">Star<span ></span><span class="label-n">60</span> <span class="green-box "> </span><span class="mr-2"></span><i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+    </ul>
+    </div>
+ </div>
+<div class="repository">
+    <ul>
+        <li class="rep"><a href="pullrequests.html"><img src="code-24.svg" alt="pin"/><span class="mr-2"></span>Code</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="issue-opened-24.svg" alt="pin"/><span class="mr-2"></span>Issues</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="git-pull-request-24.svg" alt="pin"/><span class="mr-2"></span>Pull requests</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="play-24.svg" alt="pin"/><span class="mr-2"></span>Actions</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="table-24.svg" alt="pin"/><span class="mr-2"></span>Projects</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="book-24.svg" alt="pin"/><span class="mr-2"></span>Wiki</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="shield-24.svg" alt="pin"/><span class="mr-2"></span>Security</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="graph-24.svg" alt="pin"/><span class="mr-2"></span>Insights</a></li>
+        <li class="rep"><a href="pullrequests.html"><img src="gear-24.svg" alt="pin"/><span class="mr-2"></span>Settings</a></li>
+
+
+    </ul>
+
+</div>
+            </div>
+
+</header-list>
+<section>
+    <div class="cont">
+    <nav class="section-btn">
+        <ul>
+           <li class="btn btn-sm mr-2 btn-m"><a href="marketplace.html"><img src="tag-24.svg" alt="pin"/>Labeles </a><span class="mr-2"></span><span ></span><span class="label-n">184</span><span class="mr-2"></span> <span class="green-box"> </span><span class="mr-2"></span>
+           <a href="explore.html"> <img src="milestone-24.svg" alt="pin"/>Milestones</a> <span ></span><span class="mr-2"></span><span class="label-n">2</span> <span class="mr-2"></span></li>
+           <li class="btn-vert"><a href="pullrequests.html">New inssue</a></li><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span>
+
+        </ul>
+    </nav>
+<nav class="arr-list">
+    <div>
+             <div class="btn-arr btn-arr1"><img src="issue-opened-24.svg" alt="pin"/><span class="mr-2"></span>1,334<span class="mr-2"></span></span><span class="color-noir"><a href="pullrequests.html">Open</a></span>
+             <span class="mr-2"></span><span class="color-gi">
+             <img src="check-24.svg" alt="pin"/>
+             <span class="mr-2"></span>13,793
+             <span class="mr-2"></span></span><span class="color-gi">
+                <a href="#" >Closed</a></span></span>
+            </div>
+          
+                 <div class="fill btn-arr dropdown-img" id="myImg1" onclick="ajouterImg(this)">
+                  <span class='btn-arr-img mr-2'><img src="speed-vert.png" alt="pin"/></span>
+                  <span class="color-noir"><a href="#" >crypto Cipher/Decipher validation issus</a></span>
+                  <span class="btn-red btn-r mr-2" >confirmed-bug</span>
+                  <span class="btn-limegreen btn-r mr-2">crypto</span>
+                  <span class="add-check-img" id="add-check"><img src="check-vert.svg" alt="" ></span>
+        
+                    <div> <span class="mr-2"></span>
+                        <span class="color-gi">
+                      <span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span>
+                      #45189 opened 2 hours ago by targo<span class="mr-2"></span></span>
+                   </div>
+                 
+                 </div>
+                 <div class="fill btn-arr dropdown-img" id="myImg2" onclick="ajouterImg(this)">
+                    <span class='btn-arr-img mr-2'><img src="speed-vert.png" alt="pin"/></span>
+                    <span class="color-noir"><a href="#" >File-based Blod implementation</a></span>
+                    <span class="btn-dodgerblue btn-r mr-2" >feature request</span>
+                    <span class="add-check-img" id="add-check"><img src="check-vert.svg" alt="" ></span>
+          
+                      <div> <span class="mr-2"></span>
+                          <span class="color-gi">
+                        <span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span>
+                        #45188 opened 2 hours ago by flakey5 <span class="mr-2"></span></span>
+                     </div>
+                   
+                   </div>
+
+                   <div class="fill btn-arr dropdown-img" id="myImg3" onclick="ajouterImg(this)">
+                    <span class='btn-arr-img mr-2'><img src="speed-vert.png" alt="pin"/></span>
+                    <span class="color-noir"><a href="#" >[Documentation] Add scroll-to-top button</a></span>
+                    <span class="btn-dodgerblue btn-r mr-2" >feature request</span>
+                    <span class="add-check-img" id="add-check"><img src="check-vert.svg" alt="" ></span>
+          
+                      <div> <span class="mr-2"></span>
+                          <span class="color-gi">
+                        <span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span>
+                        #45187 opened 2 hours ago by litileXueZha <span class="mr-2"></span></span>
+                     </div>
+                   
+                   </div>
+
+                  
+                   <div class="fill btn-arr dropdown-img" id="myImg3" onclick="ajouterImg(this)">
+                    <span class='btn-arr-img mr-2'><img src="speed-vert.png" alt="pin"/></span>
+                    <span class="color-noir"><a href="#" >Support optinal file globs with </a></span>
+                    <span class="btn-whitesmoke btn-r mr-2" >--watch</span>
+                    <span class="btn-dodgerblue btn-r mr-2" >feature request</span>
+                    <span class="add-check-img" id="add-check"><img src="check-vert.svg" alt="" ></span>
+          
+                      <div> <span class="mr-2"></span>
+                          <span class="color-gi">
+                        <span class="mr-2"></span><span class="mr-2"></span><span class="mr-2"></span>
+                        #45182 opened 2 hours ago by mmarti <span class="mr-2"></span></span>
+                     </div>
+                   
+                   </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+</div>
+</section>
+
+<footer>
+    
+    <div class="border-top">
+       
+    </div>
+    
+    <div class="footer-lien">
+        <div class="git-logo">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          <span> © 2022 GitHub, Inc.</span>
+        </div>
+        <div class="liens">
+            <a href="terms.html">Terms</a><span class="mr-2"></span>
+            <a href="privacy.html">Privacy</a><span class="mr-2"></span>
+            <a href="security.html">Security</a><span class="mr-2"></span>
+            <a href="status.html">Status</a><span class="mr-2"></span>
+            <a href="docs.html">Docs</a><span class="mr-2"></span>
+            <a href="contact.html">Contact Github</a><span class="mr-2"></span>
+            <a href="pricing.html">Pricing</a><span class="mr-2"></span>
+            <a href="api.html">API</a><span class="mr-2"></span>
+            <a href="training.html">Training</a><span class="mr-2"></span>
+            <a href="blog.html">Blog</a><span class="mr-2"></span>
+            <a href="about.html">About</a><span class="mr-2"></span>
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+   
+
+  
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
