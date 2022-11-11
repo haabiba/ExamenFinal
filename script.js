@@ -58,78 +58,22 @@ window.onload = (element) => {
   function ajouterImg(element){
   let elem=element.getElementById("add-check");
    elem.classList.toggle("show1");
-  }} 
+  }} */
  
   function ajouterImg(element) {
     let list = element.document.getElementById("add-check").classList;
   list.classList.toggle("show1");
   }
-  function ajouterImg(element) {
-  const toggle = element.getElementById('add-check');
-const nav = element.getElementById('myImg3');
 
-toggle.addEventListener('click', () => nav.classList.toggle('show1'));}*/
+  function displayConfirm(id) {
+    const checkedImg = document.getElementById(id + '_');
+    const imgDisplayed = checkedImg.style.display;
 
-function classToggle(element) {
-  console.log(document.querySelector(element.id).lastElementChild);
-    let elem = document.querySelector(element.id).lastElementChild;
-    elem.classList.toggle("show")
-}
-
-function ajouterImg(element) {
-    classToggle(element)
-}
+    if (imgDisplayed == "none") {
+      checkedImg.style.display = "";
+    } else {
+      checkedImg.style.display = "none";
+    }
+  }
 
 
-/* changer les element*/
-
-/*a*/
-const filled = document.querySelectorAll('.fill');
-const empties = document.querySelectorAll('.empty');
-
-//fill listeners
-for (const fill of filled){
-fill.addEventListener('dragstart', dragStart);
-fill.addEventListener('dragend', dragEnd);
-}
-
-for(const empty of empties)
-{
-    empty.addEventListener('dragover', dragOver);
-    empty.addEventListener('dragenter', dragEnter);
-    empty.addEventListener('dragleave', dragLeave);
-    empty.addEventListener('drop', dragDrop);
-}
-
-
-var element_id = "";
-
-//drag functions
-function dragStart(){
-    console.log(this.id);
-    this.className += ' hold';
-    setTimeout(() => this.className = 'invisible', 0);
-}
-
-function dragEnd(){
-    this.className = 'fill';
-}
-
-function dragOver(e){
-    e.preventDefault();
-}
-
-function dragEnter(e){
-    e.preventDefault();
-    this.className += ' hovered';
-}
-
-function dragLeave(){
-    this.className = 'empty';
-}
-
-function dragDrop(){
-    console.log(this.id);
-    //document.getElementById(this.id).className = 'empty';
-    //this.append(element_id)
-}

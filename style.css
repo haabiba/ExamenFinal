@@ -521,6 +521,7 @@ color: #ffffff;
 .section-btn{
     display: flex;
     justify-content:end;
+    padding-right: 270px;
 }
 
 .btn-arr-img img{
@@ -534,11 +535,10 @@ color: #ffffff;
 .btn-arr{
     position: relative;
     left: 150px;
-    height: 50px;
      width: 1100px;
     justify-content: center;
     display: inline-block;
-    padding: 5px 16px;
+    padding: 0px 16px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -549,18 +549,29 @@ color: #ffffff;
     user-select: none;
     color: #000000;
     background-color:#fffffff1;
-    border: 1px solid #49494b52;
+    border-color: hsla(210,18%,87%,1);
+    border-style: solid;
+    border-width: 1px;
     
     -webkit-appearance: none;
     appearance: none;  
 }
 .btn-arr1{
-    background-color: #d8d8d8;
+    background-color: #f6f8fa;
     border-radius: 6px 6px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 17px;
+    line-height: 1.5;
+
 }
 
 .color-gi{
-    color:#747479;
+    color:#57606a;
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 400;
 }
 .btn-arr1 img{
     height: 12px;
@@ -571,9 +582,10 @@ color: #ffffff;
     text-decoration: none;
 }
 .color-noir a{
-    color: black;
-   
+    color: #24292f;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .btn-arr-img img{
@@ -586,9 +598,15 @@ color: #ffffff;
 
 
 .btn-r{
-    border-radius: 10px; 
+padding: 0 7px;
 margin: 5px;
-
+border: 1px solid transparent;
+border-radius: 2em;
+font-size: 13px;
+font-weight: 500;
+line-height: 18px;
+white-space: nowrap;
+color: #ffffff;
 }
 .btn-red{
 background-color: #ff4242;
@@ -674,4 +692,34 @@ background-color: #ff4242;
     text-decoration: none;
 }
 
+.pr-list{
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+.table-row:hover{
+    background-color: #f6f8fa;
+}
+
+.table-row{
+    line-height: 1.5;
+}
+
+.table-row-content{
+    display:flex;
+    flex-direction: row;
+}
+
+.table-row-icon{
+    padding-top: 5px;
+}
+
+.table-row-text{
+    padding: 8px;
+}
+
+.table-row-label{
+    
+}
 
